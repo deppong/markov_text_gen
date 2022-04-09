@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
+#include "markov.hpp"
 
 int main(int argc, char **argv)  {
     /* -------------------------
@@ -12,13 +10,12 @@ int main(int argc, char **argv)  {
         return 1;
     }
 
-    std::ifstream file (argv[1], std::ifstream::in);
-    if (file.fail()) {
-        std::cerr << "Failed to read file " << argv[1] << " (does it exist?)" << std::endl;
-        return 1;
-    }
 
+    markov_chain chain;
 
+    chain.read_file(argv[1]);
+    chain.build_chain();
+    chain.print_data();
 
     return 0;
 }
