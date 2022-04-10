@@ -8,14 +8,13 @@ int main(int argc, char **argv)  {
     if (argc < 2) {
         std::cerr << "Usage: " << argv[0] << " <file>" << std::endl;
         return 1;
-    }
-
+    } 
 
     markov_chain chain;
 
     chain.read_file(argv[1]);
     chain.build_chain();
-    chain.print_data();
+    chain.build_sentence(50);
 
     return 0;
 }
