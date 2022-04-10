@@ -68,7 +68,7 @@ void markov_chain::print_data() {
     for (int i = 0; i < words.size(); i++) {
         std::cout << "[" << i << "]" << " " << words[i] << ": [";
         for (int j = 0; j < edges[i].size(); j++) {
-            std::cout << edges[i][j] << ",";
+            std::cout << edges[i][j] << ", ";
         }
         std::cout << "]" << std::endl;
     }

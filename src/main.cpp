@@ -14,6 +14,7 @@ int main(int argc, char **argv)  {
 
     chain.read_file(argv[1]);
     chain.build_chain();
+    chain.print_data();
     chain.build_sentence(50);
 
     return 0;
