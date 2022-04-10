@@ -11,7 +11,9 @@ this is using the above text:
 
 #### generated sentence
 ```
-next state is a follows word that could follow it. it will appear twice in the list of possible next words. twice, it has built in the edges vector. this program will process a text file and it's next word a word that could follow it. it has built in
+next state is a follows word that could follow it. it will appear twice in the list
+of possible next words. twice, it has built in the edges vector. this program will
+process a text file and it's next word a word that could follow it. it has built in
 ```
 #### The generated structure:
 ```
